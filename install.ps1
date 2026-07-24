@@ -2,7 +2,7 @@ param(
     [string]$Target = ""
 )
 
-$RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$RepoRoot = $PSScriptRoot
 $SkillsSource = Join-Path $RepoRoot "skills"
 
 if (-not $Target) {
