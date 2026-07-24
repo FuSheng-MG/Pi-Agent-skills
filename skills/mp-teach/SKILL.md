@@ -1,6 +1,6 @@
 ---
 name: teach
-description: Teach the user a new skill or concept, within this workspace.
+description: Interactive teaching session — teach the user a new skill, concept, or technology through step-by-step guidance with practice exercises. Use when the user wants to learn something new and needs structured tutoring. 当用户想学习新技能、概念或技术，需要结构化教学时触发。Trigger keywords: teach me, learn, tutorial, step by step, guide me through.
 disable-model-invocation: false
 argument-hint: "What would you like to learn about?"
 ---

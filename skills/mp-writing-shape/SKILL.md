@@ -1,6 +1,6 @@
 ---
 name: writing-shape
-description: Writing, exploit — shape raw material into an article, paragraph by paragraph.
+description: Writing, exploit — shape raw material into a finished article, paragraph by paragraph. Use when the user has collected raw material and wants a structured, paragraph-by-paragraph article built from it. 当用户已收集好素材、需要逐段构建成完整文章时触发。Trigger keywords: write article, shape content, paragraph by paragraph, finish writing.
 disable-model-invocation: false
 ---
 

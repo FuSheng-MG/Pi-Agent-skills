@@ -1,6 +1,6 @@
 ---
 name: handoff
-description: Compact the current conversation into a handoff document for another agent to pick up.
+description: Compact the current conversation into a handoff document for another agent to pick up. Use when the user needs to summarize the current context for another agent, create a handoff document, or pass work to a colleague or another AI. 当用户需要将当前对话压缩成交接文档、转交给其他代理或同事时触发。Trigger keywords: handoff, hand off, context summary, pass to another agent.
 argument-hint: "What will the next session be used for?"
 disable-model-invocation: false
 ---

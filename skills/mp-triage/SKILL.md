@@ -1,6 +1,6 @@
 ---
 name: triage
-description: Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.
+description: Process issues and PRs through a triage workflow: categorize, verify, analyze, and write agent-ready briefs. Use for issue triage, PR review triage, and backlog management. Use when the user wants to organize, classify, or process a backlog of issues or pull requests. 当需要对 Issue 或 PR 进行分类、验证、分析和编写处理简报时触发。Trigger keywords: triage, categorize issues, process PRs, backlog management, issue classification.
 disable-model-invocation: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: claude-handoff
-description: Hand the current conversation off to a fresh background agent that picks up the work immediately.
+description: Hand the current conversation off to a fresh background agent that picks up the work immediately. Use when the user wants to delegate work to a background agent, fork the conversation, or hand off context to another agent instance. 当用户想将任务交给后台代理处理、分支对话或交接上下文时触发。Trigger keywords: handoff, background agent, delegate, fork conversation, context handover.
 argument-hint: "What will the next session be used for?"
 disable-model-invocation: false
 ---

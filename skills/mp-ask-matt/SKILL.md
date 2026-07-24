@@ -1,6 +1,6 @@
 ---
 name: ask-matt
-description: Ask which skill or flow fits your situation. A router over the skills in this repo.
+description: Ask which skill or flow fits your situation. A router over the skills in this repo. Use when the user is unsure which skill to use, asks what skill should I use, or wants a recommendation on the best approach for their task. 当用户不确定用什么技能、询问推荐方案时触发。Trigger keywords: skill recommendation, ask which skill, suggest approach, router.
 disable-model-invocation: false
 ---
 

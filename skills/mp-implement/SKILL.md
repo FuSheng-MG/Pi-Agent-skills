@@ -1,6 +1,6 @@
 ---
 name: implement
-description: "Implement a piece of work based on a spec or set of tickets."
+description: Implement a piece of work based on a spec, plan, or set of tickets. Also used when the user asks to implement features described in a specification. Use when the user has a spec or tickets and wants implementation. 当用户有规格说明或任务单需要实现时触发。Trigger keywords: implement spec, implement tickets, implement plan, execute specification.
 disable-model-invocation: false
 ---
 

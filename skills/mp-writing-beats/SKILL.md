@@ -1,6 +1,6 @@
 ---
 name: writing-beats
-description: Writing, exploit — assemble raw material into a journey of beats, grounding each term before a beat leans on it.
+description: Writing, exploit — assemble raw material into a structured journey with narrative beats. Use when the user has raw material and wants it organized into a compelling narrative structure. 当用户有原始素材需要组织成有节奏感和叙述结构的文章时触发。Trigger keywords: structure article, narrative beats, organize writing, article structure.
 disable-model-invocation: false
 ---
 

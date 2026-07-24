@@ -1,6 +1,6 @@
 ---
 name: improve-codebase-architecture
-description: Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.
+description: Scan a codebase for architectural improvement opportunities, present them as a visual HTML report, then analyze through whichever you pick. Use for architecture review, codebase health assessment, and refactoring planning. Use when the user wants to improve codebase structure, review architecture, or find refactoring opportunities. 当用户需要代码库架构审查、改进机会分析、重构规划时触发。Trigger keywords: architecture review, codebase health, improve architecture, refactoring opportunities.
 disable-model-invocation: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: loop-me
-description: Grill me about specs for the workflows I want to build, within this workspace.
+description: Interactive spec refinement through questioning. Use when the user wants to clarify requirements for a workflow before building it, or needs help thinking through what they actually need. 当用户需要澄清工作流需求、梳理真正需要什么功能时触发。Trigger keywords: help me spec this, clarify requirements, refine workflow, what do I need.
 disable-model-invocation: false
 argument-hint: "A workflow to design, or nothing to go find one"
 ---

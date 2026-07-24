@@ -1,6 +1,6 @@
 ---
 name: writing-fragments
-description: Writing, explore — mine raw fragments, no structure yet.
+description: Writing, explore — mine raw fragments and explore ideas without committing to a structure yet. Use when the user has scattered notes, ideas, or fragments and wants to explore connections before structuring. 当用户有零散的笔记、想法或片段，需要在定结构之前探索关联性时触发。Trigger keywords: explore ideas, writing fragments, brainstorming, mind mapping content.
 disable-model-invocation: false
 ---
 

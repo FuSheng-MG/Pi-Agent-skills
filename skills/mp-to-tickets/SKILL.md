@@ -1,6 +1,6 @@
 ---
 name: to-tickets
-description: Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in a local file, or native blocking links on a real tracker.
+description: Break a plan, spec, or conversation into actionable tickets with dependency tracking. Use when the user has a plan or spec and wants it broken into tracked work items. 当用户有计划或规格说明需要拆解成可追踪的任务单时触发。Trigger keywords: create tickets, break into tasks, plan to tickets, issue tracker.
 disable-model-invocation: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: wizard
-description: Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets.
+description: Generate an interactive bash wizard that walks a human through a manual procedure: third-party setup, one-off migrations, state transitions. Walks through URLs, value capture, step confirmation, env files, and GitHub secrets. Use when the user needs an interactive guide for installation, migration, or manual configuration steps. 当需要生成交互式向导来引导人工操作步骤时触发。Trigger keywords: setup wizard, migration wizard, interactive script, guided procedure.
 disable-model-invocation: false
 ---
 

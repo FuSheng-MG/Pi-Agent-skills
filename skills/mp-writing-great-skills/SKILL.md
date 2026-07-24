@@ -1,6 +1,6 @@
 ---
 name: writing-great-skills
-description: Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.
+description: Reference for writing and editing high-quality agent skills. Provides vocabulary and principles for creating predictable, discoverable skills. Use when the user wants to create, edit, or review a skill file. 当用户需要创建、编辑或审查 Skill 文件时触发。Trigger keywords: create skill, write skill, edit SKILL.md, skill authoring, skill best practices.
 disable-model-invocation: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: to-spec
-description: Turn the current conversation into a spec and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.
+description: Synthesize the current conversation into a specification document and publish to the issue tracker. Use when the discussion is complete and you want to capture decisions as a spec. 当讨论已完成、需要将决策整理成规格说明发布时触发。Trigger keywords: convert to spec, create specification, document decisions, publish spec.
 disable-model-invocation: false
 ---
 
