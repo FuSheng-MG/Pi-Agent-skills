@@ -59,8 +59,8 @@
 
 - **🧩 107 个技能** — 覆盖前后端、DevOps、AI、设计、安全等全领域
 - **⚡ 即装即用** — 安装后 Pi Agent 自动发现并加载
-- **🎯 智能匹配** — AI 根据你的需求自动触发最合适的 skill（支持手动调用）
-- **🌐 多语言支持** — 中英文双语技能说明
+- **🎯 三层匹配机制** — 每个 skill 内置英文场景 + 中文场景 + 关键词索引，AI 精准触发
+- **🌐 中英双语触发** — 无论你用中文还是英文表达需求，AI 都能匹配到对应 skill
 - **🔌 生态兼容** — 遵循 [Agent Skills](https://agentskills.io/specification) 开放标准
 - **🛠️ 技能自举** — 内置 `skill-creator` / `skill-installer` 技能，可自行创建和分享
 
@@ -315,44 +315,84 @@ cp -r skills/* .pi/skills/
 
 ## ⚙️ 使用说明
 
-本仓库中的 skills 支持 **两种调用模式**：
+本仓库**全部 107 个 skills** 均支持 AI 自动匹配触发，同时也可以通过 `/skill:名称` 手动调用。
 
-### 自动匹配模式
+### 🎯 三层匹配机制
 
-**87 个 skills** 默认开启自动匹配。当你的需求与 skill 描述匹配时，Pi Agent 会自动加载并使用。例如：
+每个 skill 的描述包含 **三层触发条件**，AI 会自动识别并匹配最合适的 skill：
 
-- 当你问"这段代码有什么安全问题" → 自动触发 🔒 `security-best-practices`
-- 当你问"部署到 Vercel" → 自动触发 ☁️ `vercel-deploy`
-- 当你提到"帮我 review 这个 PR" → 自动触发 🔌 `gh-address-comments`
+```
+description: <核心功能>
+  Use when <英文触发场景>                ← ① 英文表达触发
+  当用户<中文触发场景>时触发。             ← ② 中文表达触发
+  Trigger keywords: <关键词列表>          ← ③ 关键词索引触发
+```
 
-### 手动调用模式
+**示例 — `mp-writing-shape` 的触发条件：**
 
-**20 个 skills**（均为 `mp-*` 系列）需要手动通过 `/skill:名称` 调用：
+| 层 | 内容 | 用户可能会说 |
+|:--:|:-----|:------------|
+| ① 英文 | `Use when the user has collected raw material and wants a structured article` | "I need to write an article from my notes" |
+| ② 中文 | `当用户已收集好素材、需要逐段构建成完整文章时触发` | "帮我从这些素材写一篇文章" |
+| ③ 关键词 | `write article, shape content, paragraph by paragraph, finish writing` | "写成文章"、"成文"、"整理成文" |
+
+### 🔄 自动匹配场景示例
+
+| 你的需求 | 自动触发的 skill |
+|:---------|:----------------|
+| "这段代码有什么安全问题" | 🔒 `security-best-practices` |
+| "部署到 Vercel" | ☁️ `vercel-deploy` |
+| "帮我 review 这个 PR" | 🔌 `gh-address-comments` |
+| "教我用 TypeScript 泛型" | 🧠 `mp-teach` |
+| "挑战一下我的设计方案" | 🧠 `mp-grill-me` |
+| "把讨论结果转成任务单" | 🧠 `mp-to-tickets` |
+| "帮我理清需求" | 🧠 `mp-loop-me` |
+| "交接给其他 AI 继续" | 🧠 `mp-handoff` |
+
+### ⌨️ 手动调用（补充方式）
+
+如果 AI 没有自动匹配到你想要的 skill，也可以用 `/skill:名称` 手动触发：
 
 ```bash
 /skill:mp-writing-shape       # 文章塑形写作
 /skill:mp-handoff             # 任务交接
 /skill:mp-teach               # 交互式教学
 /skill:mp-grill-me            # 知识烧烤
-/skill:mp-code-review         # TypeScript 代码审查
+/skill:mp-ask-matt            # 技能推荐向导
 ```
 
 <details>
-<summary>👆 查看全部 20 个手动调用 skills</summary>
+<summary>👆 点击查看全部 107 个 skills 名称</summary>
 
+**⚙️ agent-skills**
 ```
-mp-ask-matt            mp-caveman               mp-claude-handoff
-mp-edit-article        mp-grill-me              mp-grill-with-docs
-mp-handoff             mp-implement             mp-improve-codebase-architecture
-mp-loop-me             mp-setup-matt-pocock-skills  mp-teach
-mp-to-spec             mp-to-tickets            mp-triage
-mp-wayfinder           mp-wizard                mp-writing-beats
-mp-writing-fragments   mp-writing-great-skills  mp-writing-shape
+api-and-interface-design        codebase-migrate                  debugging-and-error-recovery
+browser-testing-with-devtools   context-engineering               deprecation-and-migration
+changelog-generator             create-plan                       documentation-and-adrs
+ci-cd-and-automation            doubt-driven-development          frontend-ui-engineering
+code-review-and-quality         issue-triage                      performance-optimization
+code-simplification
 ```
+
+**🧠 mattpocock**
+```
+mp-ask-matt                    mp-grill-with-docs                mp-setup-matt-pocock-skills
+mp-caveman                     mp-grilling                       mp-setup-pre-commit
+mp-claude-handoff              mp-handoff                        mp-tdd
+mp-code-review                 mp-implement                      mp-teach
+mp-codebase-design             mp-improve-codebase-architecture  mp-to-spec
+mp-diagnosing-bugs             mp-loop-me                        mp-to-tickets
+mp-domain-modeling             mp-migrate-to-shoehorn            mp-triage
+mp-edit-article                mp-obsidian-vault                 mp-wayfinder
+mp-git-guardrails-claude-code  mp-prototype                      mp-wizard
+mp-grill-me                    mp-research                       mp-writing-beats
+mp-resolving-merge-conflicts   mp-scaffold-exercises             mp-writing-fragments
+mp-writing-great-skills        mp-writing-shape
+```
+
+**🚀 dev-workflow / 🤖 anthropic / 🔌 integrations / ☁️ infra-deploy / 🔒 security / 📦 minimax** — 详见上方 [详细列表](#-详细列表)
 
 </details>
-
-> 这些技能的 `disable-model-invocation: false`，它们既可自动匹配，也可手动调用。
 
 ---
 
