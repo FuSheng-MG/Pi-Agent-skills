@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/skills-107-blue?style=flat-square" alt="Skills">
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/license-GPLv3-blue?style=flat-square" alt="License">
   <img src="https://img.shields.io/badge/pi--agent-ready-orange?style=flat-square" alt="Pi Agent Ready">
 </p>
 
@@ -60,4 +60,4 @@ Pi Agent 会自动扫描并加载这些 skills。
 
 ## 许可证
 
-MIT — 详见各技能上游项目的原始许可证。
+GNU General Public License v3.0 — 详见 [LICENSE](./LICENSE) 文件。
