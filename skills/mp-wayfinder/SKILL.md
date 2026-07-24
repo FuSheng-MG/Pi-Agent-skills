@@ -1,6 +1,6 @@
 ---
 name: wayfinder
-description: Plan large-scale work spanning multiple sessions by creating a map of investigation tickets on your issue tracker, resolving them one by one. Use for big, ambiguous projects that need step-by-step discovery. Use when the user has a large, unclear project that needs to be broken down into investigation steps. 当面对大型模糊项目需要分步探索和规划时触发。Trigger keywords: plan large project, multi-session work, investigation plan, discovery roadmap.
+description:  Plan large-scale work spanning multiple sessions by creating a map of investigation tickets on your issue tracker, resolving them one by one. Use for big, ambiguous projects that need step-by-step discovery. Use when the user has a large, unclear project that needs to be broken down into investigation steps. 当面对大型模糊项目需要分步探索和规划时触发。Trigger keywords: large project plan, discovery roadmap, breaking down big work, investigation plan, project scoping.
 disable-model-invocation: false
 ---
 
